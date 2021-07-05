@@ -16,15 +16,15 @@ blobby.c should be able to:
 - list, extract, and create blobs that are compressed, 
 
 
-- Given the -l command line argument blobby.c should for each file in the specified blob print:
+Given the -l command line argument blobby.c should for each file in the specified blob print:
     - The file/directory permissions in octal
     - The file/directory size in bytes
     - The file/directory pathname
 
-- Given the -c command line argument blobby.c should:
+Given the -c command line argument blobby.c should:
     - Create a blob containing the specified files.
     - Be able to add files in sub-directories. 
 
-- Given the -c and the -z command line argument blobby.c should:
+Given the -c and the -z command line argument blobby.c should:
     - Compress all bytes of the blob using the external program xz.
     - The function posix_spawn or posix_spawnp must be used to run xz.
